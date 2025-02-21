@@ -1,10 +1,46 @@
-a {
-  color: #4F6D76;
-  font-size: 30px;
+nav * {
+  background-color: #8CB3C9;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 40px;
 }
 
-nav {
+
+.container-logo {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
+
+.container-felix-foto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 300px;
+  max-width: 100%;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header {
+  display: flex;
+  font-size: 60px;
+  text-align: center;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+}
+
 /* Colors:
 Light Blue: #8CB3C9
 Medium Blue: #6E8B98
