@@ -9,6 +9,13 @@ nav * {
   font-size: 40px;
 }
 
+.header {
+  font-size: 100px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
 
 .container-logo {
   width: 200px;
@@ -22,23 +29,17 @@ nav * {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 300px;
-  max-width: 100%;
+  height: fit-content;
   bottom: 0;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  margin: 10px;
 }
 
-.header {
+h2 {
   display: flex;
-  font-size: 60px;
-  text-align: center;
-  height: 50px;
   justify-content: center;
-  align-items: center;
-  margin: 0;
-
 }
 
 /* Colors:
