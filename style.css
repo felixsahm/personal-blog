@@ -31,6 +31,7 @@ nav * {
   align-items: flex-end;
   height: fit-content;
   bottom: 0;
+  max-width: 100%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -40,6 +41,12 @@ nav * {
 h2 {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 700px) {
+  nav * {
+    background-color: tomato;
+  }
 }
 
 /* Colors:
