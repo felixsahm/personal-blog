@@ -1,56 +1,102 @@
-nav * {
+nav {
   background-color: #8CB3C9;
   display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav ul {
   list-style: none;
-  padding: 0;
+  display: flex;
   margin: 0;
-  justify-content: center;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
   text-decoration: none;
-  font-size: 40px;
+  color: white;
+  font-size: 20px;
 }
 
+/* Header styling */
 .header {
-  font-size: 100px;
   display: flex;
-  margin: 0;
-  padding: 0;
+  align-items: center;
   justify-content: center;
+  margin: 20px;
 }
 
-.container-logo {
-  width: 200px;
-  height: 200px;
-  display: flex;
+.header img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.header h1 {
+  font-size: 50px;
   margin: 0;
-  padding: 0;
 }
 
+/* Neu hinzugefügt */
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 5px;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px; /* Neu hinzugefügt */
+}
+
+p {
+  font-size: 30px;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 20px; /* Neu hinzugefügt */
+}
+
+/* Container styling */
 .container-felix-foto {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: fit-content;
-  bottom: 0;
-  max-width: 100%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   margin: 10px;
 }
 
-h2 {
-  display: flex;
-  justify-content: center;
+.container-felix-foto img {
+  max-width: 100%;
+  height: auto;
 }
 
+/* Responsive Design */
 @media (max-width: 700px) {
-  nav * {
-    background-color: tomato;
+  nav {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px;
+  }
+
+  .header h1 {
+    font-size: 20px;
   }
 }
 
-/* Colors:
-Light Blue: #8CB3C9
-Medium Blue: #6E8B98
-Dark Blue: #4F6D76
-Gray: #5C7A84 */
+@media (max-width: 400px) {
+  nav a {
+    font-size: 18px;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+}
