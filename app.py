@@ -3,29 +3,19 @@ app = Flask(__name__)
 
 app.config.from_object('config')
 
-
-cookies_data = [ #list
-  {'name': 'Chocolate Chip', 'price': '$1.50'},
-  {'name': 'Oatmeal Raisin', 'price': '$1.00'},
-  {'name': 'Sugar', 'price': '$0.75'},
-  {'name': 'Peanut Butter', 'price': '$0.50'},
-  {'name': 'Oatmeal', 'price': '$0.25'},
-  {'name': 'Salted Caramel', 'price': '$1.00'},
-]
-
-@app.route('/cookies/<int:id>')
-def cookie(id):
-  return '<h1>' + cookies_data[id]['name'] + '</h1>' + '<p>' + cookies_data[id]['price'] + '</p>'
-
-@app.route('/index.html')
+@app.route('/')
 def index():
   return render_template('index.html')
 
-@app.route('/posts.html')
+@app.route('/posts')
 def posts():
   return render_template('posts.html')
 
-@app.route('/about.html')
+@app.route('/posts/<slug>')
+def posts_slug(slug):
+  return render_template('posts-slug.html', slug=slug)
+
+@app.route('/about')
 def about():
   return render_template('about.html')
 
