@@ -13,7 +13,7 @@ nav ul {
 }
 
 nav li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 nav a {
@@ -98,5 +98,48 @@ p {
 
   .header h1 {
     font-size: 25px;
+  }
+}
+
+#posts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none; /* Entfernt die Standard-Aufzählungszeichen */
+  padding: 0; /* Entfernt die Standard-Padding */
+  margin: 0; /* Entfernt die Standard-Margin */
+  margin-top: 200px; /* Verschiebt die Liste nach unten */
+  font-size: 40px;
+}
+
+#posts li {
+  margin-right: 100px; /* Abstand zwischen den Listenelementen */
+}
+
+#posts a {
+  text-decoration: none; /* Entfernt die Unterstreichung der Links */
+  color: black; /* Setzt die Textfarbe */
+}
+/* Media Query für kleinere Bildschirme */
+@media (max-width: 768px) {
+  #posts {
+    flex-direction: column; /* Ändert die Ausrichtung zu vertikal */
+    align-items: flex-start; /* Linksbündig für vertikale Ausrichtung */
+  }
+
+  #posts li {
+    margin-right: 0; /* Kein rechter Abstand mehr, da vertikal */
+    margin-bottom: 10px; /* Abstand zwischen den Listenelementen */
+  }
+}
+
+/* Media Query für sehr kleine Bildschirme */
+@media (max-width: 480px) {
+  #posts li {
+    margin-bottom: 5px; /* Weniger Abstand für sehr kleine Bildschirme */
+  }
+
+  #posts a {
+    font-size: 14px; /* Kleinere Schriftgröße für Links */
   }
 }
