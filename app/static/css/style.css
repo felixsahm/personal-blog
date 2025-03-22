@@ -41,7 +41,7 @@ nav a {
   margin: 0;
 }
 
-/* Neu hinzugefügt */
+
 h1 {
   margin-bottom: 20px;
 }
@@ -51,7 +51,7 @@ h2 {
   margin: 5px;
   padding: 10px;
   margin-top: 0px;
-  margin-bottom: 10px; /* Neu hinzugefügt */
+  margin-bottom: 10px;
 }
 
 p {
@@ -59,7 +59,7 @@ p {
   margin: 5px;
   padding: 5px;
   margin-top: 0;
-  margin-bottom: 20px; /* Neu hinzugefügt */
+  margin-bottom: 20px;
 }
 
 /* Container styling */
