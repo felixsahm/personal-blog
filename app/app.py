@@ -18,3 +18,5 @@ def posts_slug(slug):
 @app.route('/about')
 def about():
   return render_template('about.html')
+
+#test if i see this
