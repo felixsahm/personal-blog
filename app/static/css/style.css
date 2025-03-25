@@ -1,0 +1,145 @@
+nav {
+  background-color: #8CB3C9;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.header img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.header h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 5px;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 30px;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Container styling */
+.container-felix-foto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  margin: 10px;
+}
+
+.container-felix-foto img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  nav a {
+    font-size: 18px;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+}
+
+#posts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none; /* Entfernt die Standard-Aufzählungszeichen */
+  padding: 0; /* Entfernt die Standard-Padding */
+  margin: 0; /* Entfernt die Standard-Margin */
+  margin-top: 200px; /* Verschiebt die Liste nach unten */
+  font-size: 40px;
+}
+
+#posts li {
+  margin-right: 100px; /* Abstand zwischen den Listenelementen */
+}
+
+#posts a {
+  text-decoration: none; /* Entfernt die Unterstreichung der Links */
+  color: black; /* Setzt die Textfarbe */
+}
+/* Media Query für kleinere Bildschirme */
+@media (max-width: 768px) {
+  #posts {
+    flex-direction: column; /* Ändert die Ausrichtung zu vertikal */
+    align-items: flex-start; /* Linksbündig für vertikale Ausrichtung */
+  }
+
+  #posts li {
+    margin-right: 0; /* Kein rechter Abstand mehr, da vertikal */
+    margin-bottom: 10px; /* Abstand zwischen den Listenelementen */
+  }
+}
+
+/* Media Query für sehr kleine Bildschirme */
+@media (max-width: 480px) {
+  #posts li {
+    margin-bottom: 5px; /* Weniger Abstand für sehr kleine Bildschirme */
+  }
+
+  #posts a {
+    font-size: 14px; /* Kleinere Schriftgröße für Links */
+  }
+}

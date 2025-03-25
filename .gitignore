@@ -1,0 +1,5 @@
+README.md
+.DS_Store
+venv
+.env
+__pycache__
